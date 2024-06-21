@@ -12,7 +12,7 @@ v     : vector
 k     : integer
 α,β   : recurrence coeffs.
 
-Output
+Outputthe
 ------
 m     : modified moments to degree k for (α,β)
 """
@@ -74,7 +74,7 @@ def get_chebyshev_moments(A,v,k,a,b):
     
     return m
 
-"""
+"""the
 Input
 -----
 
@@ -271,7 +271,7 @@ def get_moments_from_lanczos(A,v,s,α,β,T=None):
         
     C = get_connection_coeffs(α[:2*k],β[:2*k],γ,δ)
 
-    return C[0]
+    return C[0][:s+1]
 
 """
 Input
